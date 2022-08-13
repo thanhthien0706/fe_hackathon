@@ -87,8 +87,8 @@ export default {
         },
         {
           id: 1,
-          name: "Pate",
-          link: "contactPage",
+          name: "Thủ tục hành chính",
+          link: "administrativeproceduresPage",
           child: [],
         },
         {
