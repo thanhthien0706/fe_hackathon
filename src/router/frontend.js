@@ -21,5 +21,3 @@ export const FrontendRouter = [
     component: () => import("@/views/frontend/HomePage.vue"),
   },
 ];
-
-export default FrontendRouter;

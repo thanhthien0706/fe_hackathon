@@ -29,13 +29,33 @@
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
           <form>
+            <!-- Name input -->
+            <div class="form-outline mb-4">
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                placeholder="Nhập tên của bạn"
+                v-model="formUser.name"
+              />
+            </div>
+
             <!-- Email input -->
             <div class="form-outline mb-4">
               <input
                 type="email"
-                id="form3Example3"
                 class="form-control form-control-lg"
-                placeholder="Enter a valid email address"
+                placeholder="Nhập email..."
+                v-model="formUser.email"
+              />
+            </div>
+
+            <!-- phone input -->
+            <div class="form-outline mb-4">
+              <input
+                type="number"
+                class="form-control form-control-lg"
+                placeholder="Nhập số điện thoại..."
+                v-model="formUser.phone"
               />
             </div>
 
@@ -46,23 +66,8 @@
                 id="form3Example4"
                 class="form-control form-control-lg"
                 placeholder="Nhập mật khẩu"
+                v-model="formUser.password"
               />
-            </div>
-
-            <div class="d-flex justify-content-between align-items-center">
-              <!-- Checkbox -->
-              <div class="form-check mb-0">
-                <input
-                  class="form-check-input me-2"
-                  type="checkbox"
-                  value=""
-                  id="form2Example3"
-                />
-                <label class="form-check-label" for="form2Example3">
-                  Nhớ mật khẩu
-                </label>
-              </div>
-              <a href="#!" class="text-body">Quên mật khẩu?</a>
             </div>
 
             <div class="text-center text-lg-start mt-4 pt-2">
@@ -70,13 +75,14 @@
                 type="button"
                 class="btn btn-primary btn-lg customeBtn"
                 style="padding-left: 2.5rem; padding-right: 2.5rem"
+                @click="onHandleRegister"
               >
                 Đăng nhập
               </button>
               <p class="small fw-bold mt-2 pt-1 mb-0">
-                Bạn chưa có mật khẩu?
-                <router-link :to="{ name: 'RegisterPage' }" class="link-danger"
-                  >Đăng ký</router-link
+                Bạn đã có tài khoản?
+                <router-link :to="{ name: 'LoginPage' }" class="link-danger"
+                  >Đăng nhập</router-link
                 >
               </p>
             </div>
@@ -89,6 +95,19 @@
 
 <script>
 export default {
-  name: "LoginView",
+  name: "RegisterView",
+  data() {
+    return {
+      formUser: {
+        name: "",
+        email: "",
+        phone: "",
+        password: "",
+      },
+    };
+  },
+  methods: {
+    onHandleRegister() {},
+  },
 };
 </script>
