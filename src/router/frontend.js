@@ -13,6 +13,14 @@ export const FrontendRouter = [
     component: () => import("@/views/frontend/ContactPage.vue"),
   },
   {
+    path: "/thu-tuc-hanh-chinh",
+    name: "administrativeproceduresPage",
+    meta: {
+      title: "Thủ tục hành chính",
+    },
+    component: () => import("@/views/frontend/ProceduresPage.vue"),
+  },
+  {
     path: "/",
     name: "homePage",
     meta: {
