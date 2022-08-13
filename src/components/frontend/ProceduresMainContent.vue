@@ -55,6 +55,25 @@
               <div class="help-block with-errors"></div>
             </div>
           </div>
+
+          <div class="column col-md-">
+            <p>Vui lòng cung cấp ảnh CMND(mặt trước, mặt sau):</p>
+          </div>
+          <div class="column col-md-12">
+            <!-- arnh cmnd -->
+            <div class="form-group">
+              <input
+                type="file"
+                multiple
+                class="form-control"
+                id="InputFIle"
+                name="InputFIle"
+                required="required"
+                data-error=""
+              />
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
           <!-- ============================================================ -->
           <h6 class="section-title">Cung cấp thông tin hộ khẩu thường trú</h6>
           <div class="column col-md-3">
