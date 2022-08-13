@@ -757,7 +757,7 @@
           <!-- sidebar -->
           <div class="sidebar">
             <!-- widget about -->
-            <div class="widget rounded">
+            <!-- <div class="widget rounded">
               <div
                 class="widget-about data-bg-image text-center"
                 data-bg-image="images/map-bg.png"
@@ -789,7 +789,7 @@
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
 
             <!-- widget popular posts -->
             <div class="widget rounded">
