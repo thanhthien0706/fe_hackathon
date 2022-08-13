@@ -13,7 +13,7 @@
         <div class="messages"></div>
 
         <div class="row">
-          <div class="column col-md-6">
+          <div class="column col-md-3">
             <!-- Name input -->
             <div class="form-group">
               <input
@@ -52,6 +52,20 @@
                 <option value="male">Giới tính Nam</option>
                 <option value="femail">Giới tính Nữ</option>
               </select>
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="column col-md-3">
+            <!-- xã input -->
+            <div class="form-group">
+              <input
+                type="text"
+                class="form-control"
+                id="InputFIle"
+                name="InputFIle"
+                required="required"
+                placeholder="Số điện thoại (+84)"
+              />
               <div class="help-block with-errors"></div>
             </div>
           </div>
@@ -134,7 +148,7 @@
           </div>
           <!-- ============================================================================== -->
           <h6 class="section-title">Cung cấp thông tin tạm trú</h6>
-          <div class="column col-md-4">
+          <div class="column col-md-12">
             <!-- Email input -->
             <div class="form-group">
               <select name="selectGT" id="selectGT" class="form-control">
@@ -149,35 +163,6 @@
             </div>
           </div>
 
-          <div class="column col-md-4">
-            <!-- xã input -->
-            <div class="form-group">
-              <input
-                type="number"
-                class="form-control"
-                id="InputFIle"
-                name="InputFIle"
-                required="required"
-                placeholder="Số CMND/CCCD"
-              />
-              <div class="help-block with-errors"></div>
-            </div>
-          </div>
-
-          <div class="column col-md-4">
-            <!-- xã input -->
-            <div class="form-group">
-              <input
-                type="text"
-                class="form-control"
-                id="InputFIle"
-                name="InputFIle"
-                required="required"
-                placeholder="Số điện thoại (+84)"
-              />
-              <div class="help-block with-errors"></div>
-            </div>
-          </div>
           <!-- Thônng tin nơi chốn tạm trú -->
           <div class="column col-md-3">
             <!--  Tỉnh -->
