@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import { FrontendRouter } from "./frontend";
+import { AuthenRouter } from "./authen";
 
-const routes = [...FrontendRouter];
+const routes = [...AuthenRouter, ...FrontendRouter];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
