@@ -1,5 +1,5 @@
 <template>
-  <p class="">Thien hello</p>
+  <router-view />
 </template>
 
-<style lang="scss" src="@/assets/styles/main.scss"></style>
+<style lang="scss" src="./assets/styles/scss/main.scss"></style>
